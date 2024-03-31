@@ -5,7 +5,7 @@
 $n = mt_rand(1,3);
 
 if ($n === 1) {
-  $message = '<script>alert(1)</script>エンジニア目指します。' . date('l');
+  $message = 'エンジニア目指します。' . date('l');
 } elseif ($n === 2) {
   $message = 'プログラミング楽しい！' . date('l');
 } else {
@@ -49,23 +49,26 @@ if ($n === 1) {
   </header>
 
   <section class="works">
-    <h1>WORKS</h1>
+    <h2>WORKS</h2>
     <section>
       <img src="img/work1.png" width="400" height="260" alt="勇者ゲームの紹介画像">
-      <h1>勇者ゲーム</h1>
+      <h3>勇者ゲーム</h3>
       <p>楽しいアプリです。楽しいアプリです。楽しいアプリです。楽しいアプリです。楽しいアプリです。楽しいアプリです。楽しいアプリです。楽しいアプリです。楽しいアプリです。楽しいアプリです。楽しいアプリです。</p>
+      <a href="hero.php">もっと見る</a>
     </section>
   
     <section>
       <img src="img/work2.png" width="400" height="260" alt="宝探しゲームの紹介画像">
-      <h1>宝探しゲーム</h1>
+      <h3>宝探しゲーム</h3>
       <p>楽しいアプリです。楽しいアプリです。楽しいアプリです。楽しいアプリです。楽しいアプリです。楽しいアプリです。楽しいアプリです。楽しいアプリです。楽しいアプリです。楽しいアプリです。楽しいアプリです。</p>
+      <a href="treasure.php">もっと見る</a>
     </section>
   
     <section>
       <img src="img/work3.png" width="400" height="260" alt="神経衰弱の紹介画像">
-      <h1>神経衰弱</h1>
+      <h3>神経衰弱</h3>
       <p>楽しいアプリです。楽しいアプリです。楽しいアプリです。楽しいアプリです。楽しいアプリです。楽しいアプリです。楽しいアプリです。楽しいアプリです。楽しいアプリです。楽しいアプリです。楽しいアプリです。</p>
+      <a href="memory.php">もっと見る</a>
     </section>
 
   </section>
