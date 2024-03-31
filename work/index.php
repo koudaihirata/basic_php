@@ -15,7 +15,7 @@
       </div>
       <div class="info">
         <h1>平田晃大</h1>
-        <p>UI/UXデザイナー見習いです</p>
+        <p><?php echo 'エンジニア目指します' . date('l'); ?></p>
         <ul>
           <li>
             <a href="https://dotinstall.com" target="_blank">
