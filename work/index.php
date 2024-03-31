@@ -1,6 +1,16 @@
 <?php
 
-$message = 'エンジニア目指します。' . date('l');
+// $message = 'エンジニア目指します。' . date('l');
+
+$n = mt_rand(1,3);
+
+if ($n === 1) {
+  $message = 'エンジニア目指します。' . date('l');
+} elseif ($n === 2) {
+  $message = 'プログラミング楽しい！' . date('l');
+} else {
+  $message = '毎日コーディング！' . date('l');
+}
 
 ?>
 
