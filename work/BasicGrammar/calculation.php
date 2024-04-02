@@ -16,16 +16,16 @@ $title = '基礎文法 - 四則演算 ';
 
 <?php
 
-// echo 10 + 3 . PHP_EOL; // 13
-// echo 10 - 3 . PHP_EOL; // 7
-// echo 10 * 3 . PHP_EOL; // 30
-// echo 10 / 3 . PHP_EOL; // 3.3333...
+echo 10 + 3 . PHP_EOL; // 13
+echo 10 - 3 . PHP_EOL; // 7
+echo 10 * 3 . PHP_EOL; // 30
+echo 10 / 3 . PHP_EOL; // 3.3333...
 
-// echo 10 % 3 . PHP_EOL; // 1
-// echo 10 ** 3 . PHP_EOL; // 1000
+echo 10 % 3 . PHP_EOL; // 1
+echo 10 ** 3 . PHP_EOL; // 1000
 
-// echo 2 + 10 * 3 . PHP_EOL; // 32
-// echo (2 + 10) * 3 . PHP_EOL; // 36
+echo 2 + 10 * 3 . PHP_EOL; // 32
+echo (2 + 10) * 3 . PHP_EOL; // 36
 
 echo 2 + '3' . PHP_EOL; // 5
 
