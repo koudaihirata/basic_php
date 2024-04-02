@@ -125,15 +125,48 @@ echo iii(100, 300, 500) . PHP_EOL; // 900
 echo iii(-1000, 300, 500) . PHP_EOL; // 0
 echo '<br> <br>';
 
-// 引数の型を指定
-// declare(strict_types=1);
+// 配列
+// $score1 = 90;
+// $score2 = 40;
+// $score3 = 100;
 
-function showInfo(string $name, int $score): void
-{
-  echo $name . ': ' . $score . PHP_EOL;
+$scores = [
+  90,
+  40,
+  100,
+];
+
+$scores[1] = 60;
+echo $scores[1] . PHP_EOL;
+echo '<br> <br>';
+
+// 配列のキーを指定
+$scores = [
+  'first'  => 90, 
+  'second' => 40, 
+  'third'  => 100,
+];
+
+// var_dump($scores);
+// print_r($scores);
+
+echo $scores['third'] . PHP_EOL;
+echo '<br> <br>';
+
+// foreach文
+$scores = [
+  'first'  => 90, 
+  'second' => 40, 
+  'third'  => 100,
+];
+
+// foreach ($scores as $value) {
+// foreach ($scores as $score) {
+//   echo $score . PHP_EOL;
+// }
+
+foreach ($scores as $key => $score) {
+  echo $key . ' - ' . $score . PHP_EOL;
 }
-showInfo('taguchi', 40);
-// showInfo('taguchi', 'dotinstall');
-// showInfo('taguchi', '4');
 echo '<br> <br>';
 
