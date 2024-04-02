@@ -1,6 +1,6 @@
 <?php
 
-$title = '基礎文法 - ';
+$title = '基礎文法 - 四則演算 ';
 
 ?>
 
@@ -11,9 +11,8 @@ $title = '基礎文法 - ';
     <title><?= htmlspecialchars($title, ENT_QUOTES, 'UTF-8'); ?>晃大のphpチュートリアルサイト</title>
     <link rel="icon" href="../favicon.ico">
     <meta name="description" content="晃大のphpチュートリアルサイト">
+    <link rel="stylesheet" href="../css/styles.css">
 </head>
-<body>
-    <a href="variable.php">変数</a>
-    <a href="calculation.php">四則演算</a>
-</body>
-</html>
+
+<?php
+
