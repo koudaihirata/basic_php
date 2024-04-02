@@ -25,6 +25,8 @@ include('_header.php');
       <a href="memory.php">もっと見る</a>
     </section>
 
+    <a href="BasicGrammar/basic.php">基礎文法編</a>
+
     <?php
 
 include('_footer.php');
