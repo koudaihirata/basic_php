@@ -15,5 +15,6 @@ $title = '基礎文法 - ';
 <body>
     <a href="variable.php">変数</a>
     <a href="calculation.php">四則演算</a>
+    <a href="constant.php">定数</a>
 </body>
 </html>
