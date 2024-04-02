@@ -12,7 +12,21 @@ $title = '基礎文法 - ';
     <link rel="icon" href="../favicon.ico">
     <meta name="description" content="晃大のphpチュートリアルサイト">
 </head>
-<body>
-    
-</body>
-</html>
+
+<?php
+
+// comment
+# comment
+/*
+comment
+comment
+*/
+
+// $name = '晃大';
+$name = '平田晃大';
+
+// echo 'こんばんは、晃大です。' . PHP_EOL;
+// echo 'hi! 広大です。' . PHP_EOL;
+
+echo 'こんばんは、' . $name . 'です。' . PHP_EOL;
+echo 'hi!' . $name . 'です。' . PHP_EOL;
