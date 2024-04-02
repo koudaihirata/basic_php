@@ -47,3 +47,100 @@ $b = (string)1.3;
 
 var_dump($a);
 var_dump($b);
+echo '<br><br>';
+
+// $score = 85;
+// $score = 70;
+$score = 40;
+
+//if文
+if ($score >= 80) {
+  echo 'Great!' . PHP_EOL;
+} elseif ($score >= 60) {
+  echo 'Good!' . PHP_EOL;
+} else {
+  echo 'OK!' . PHP_EOL;
+}
+echo '<br><br>';
+
+$score = 60;
+$name = 'taguchi';
+
+if ($score >= 50) {
+   if ($name === 'taguchi') {
+     echo 'Good Job!' . PHP_EOL;
+   }
+}
+echo '<br>';
+
+// && and なおかつ
+// || or もしくは
+// ! 〜ではない
+if ($score >= 50 && $name === 'taguchi') {
+  echo 'Good Job!' . PHP_EOL;
+}
+echo '<br><br>';
+
+$signal = 'red';
+// $signal = 'blue';
+// $signal = 'green';
+// $signal = 'pink';
+
+if ($signal === 'red') {
+  echo 'Stop!' . PHP_EOL;
+} elseif ($signal === 'yellow') {
+  echo 'Caution!' . PHP_EOL;
+} elseif ($signal === 'blue'){
+  echo 'Go!' . PHP_EOL;
+}
+echo '<br>';
+
+// switch分
+switch ($signal) {
+  case 'red':
+    echo 'Stop!' . PHP_EOL;
+    break;
+  case 'yellow':
+    echo 'Caution!' . PHP_EOL;
+    break;
+  case 'blue':
+  case 'green':
+    echo 'Go!' . PHP_EOL;
+    break;
+  default:
+    echo 'Wrong signal!!' . PHP_EOL;
+    break;
+}
+echo '<br><br>';
+
+// for文
+for ($i = 1; $i <= 5; $i++) {
+    // echo 'Hello' . PHP_EOL;
+    echo "$i - Hello" . PHP_EOL;
+  }
+echo '<br><br>';
+
+// while do文
+$hp = 100;
+
+while ($hp > 0) {
+    echo "Your HP: $hp" . PHP_EOL;
+    $hp -= 15;
+}
+do {
+    echo "Your HP: $hp" . PHP_EOL;
+    $hp -= 15;
+  } while ($hp > 0);
+  echo '<br><br>';
+
+  // continue break文
+  for ($i = 1; $i <= 10; $i++) {
+    // if ($i === 4) {
+    // if ($i % 3 === 0) {
+    //   continue;
+    // }
+    if ($i === 4) {
+      break;
+    }
+    echo $i . PHP_EOL;
+  }
