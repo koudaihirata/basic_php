@@ -27,6 +27,7 @@ include('_header.php');
 
     <a href="BasicGrammar/basic.php">基礎文法編</a>
     <a href="BuiltIn/BuiltIn.php">ビルトイン関数編</a>
+    <a href="Object/Object.php">オブジェクト編</a>
 
     <?php
 
