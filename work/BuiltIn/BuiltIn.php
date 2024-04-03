@@ -92,3 +92,25 @@ $t = '17:32:45';
 print_r(explode(':', $t));
 echo '<br> <br>';
 
+// 数学系の関数を使ってみよう
+$n = 5.6283;
+
+// 切り上げ
+echo ceil($n) . PHP_EOL; // 6
+// 切り捨て
+echo floor($n) . PHP_EOL; // 5
+// 整数で四捨五入
+echo round($n) . PHP_EOL; // 6
+// 小数点以下二桁になるように四捨五入
+echo round($n, 2) . PHP_EOL; // 5.63
+// 乱数
+echo mt_rand(1, 6) . PHP_EOL;
+// 最大値や最小値を求める関数
+echo max(3, 9, 4) .PHP_EOL;
+echo min(3, 9, 4) .PHP_EOL;
+// 円周率
+echo M_PI . PHP_EOL;
+// 2 の平方根
+echo M_SQRT2 . PHP_EOL;
+echo '<br> <br>';
+
