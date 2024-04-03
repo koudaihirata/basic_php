@@ -114,3 +114,98 @@ echo M_PI . PHP_EOL;
 echo M_SQRT2 . PHP_EOL;
 echo '<br> <br>';
 
+// 配列の要素を変更してみよう
+$scores = [30, 40, 50];
+// 先頭に要素を足す
+array_unshift($scores, 10, 20);
+// 末尾に要素を足す
+array_push($scores, 60, 70);
+// $scores[] として 80 としてあげると一番最後に 80 が追加されます。
+$scores[] = 80;
+// 先頭から要素を削除
+array_shift($scores);
+// 末尾から要素を削除
+array_pop($scores);
+print_r($scores);
+echo '<br> <br>';
+
+// array_slice()で要素を切り出そう
+$scores = [30, 40, 50, 60, 70];
+// $partial = array_slice($scores, 2, 3);
+$partial = array_slice($scores, 2);
+$partial = array_slice($scores, -2);
+
+print_r($scores);
+echo '<br>';
+print_r($partial);
+echo '<br> <br>';
+
+// array_splice()で要素を削除､置換しよう
+// array_splice(配置, 位置, 個数) array_splice(配置, 位置, 個数, 消したところに挿入する要素)
+$scores = [30, 40, 50, 60, 70, 80];
+// array_splice($scores, 2, 3);
+// array_splice($scores, 2, 3, 100);
+array_splice($scores, 2, 0, [100, 101]);
+
+print_r($scores);
+echo '<br> <br>';
+
+// 配列をソート､シャッフルしてみよう
+$scores = [40, 50, 20, 30];
+// 値を小さい順に並び替え
+sort($scores);
+// rsort() とすると、値を大きい順に並び替え
+print_r($scores);
+// 実行するたびに値をシャッフルしてくれる
+shuffle($scores);
+print_r($scores);
+
+$picked = array_rand($scores, 2);
+echo $scores[$picked[0]] . PHP_EOL;
+echo $scores[$picked[1]] . PHP_EOL;
+echo '<br> <br>';
+
+// 配列の値を集計してみよう
+// $scores = array_fill(0, 5, 10);
+// $scores = range(1, 10);
+$scores = range(1, 10, 2);
+
+print_r($scores);
+
+echo array_sum($scores) . PHP_EOL;
+echo max($scores) . PHP_EOL;
+echo min($scores) . PHP_EOL;
+echo array_sum($scores) / count($scores) . PHP_EOL;
+echo '<br> <br>';
+
+// 配列の連結､差､共通項の計算をしよう
+$a = [3, 4, 8];
+$b = [4, 8, 12];
+
+// $merged = array_merge($a, $b);
+// $merged = [...$a, ...$b];
+print_r($merged);
+
+$uniques = array_unique($merged);
+print_r($uniques);
+// array_diff($a, $b) の場合は $a にある要素から $b にある要素を引いてくれる
+$diff1 = array_diff($a, $b);
+print_r($diff1); // [3]
+// array_diff($b, $a) ですが、 $b から $a にある要素を引く
+$diff2 = array_diff($b, $a);
+print_r($diff2); // [12]
+// intersectは、共通の要素を取り出す
+$common = array_intersect($a, $b);
+print_r($common); // [4, 8]
+echo '<br> <br>';
+
+// array_map()を使ってみよう
+$prices = [100, 200, 300];
+
+$newPrices = array_map(
+  function ($n) { return $n * 1.1; },
+//   fn($n) => $n * 1.1,
+  $prices
+);
+
+print_r($newPrices);
